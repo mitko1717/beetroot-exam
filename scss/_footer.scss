@@ -1,0 +1,35 @@
+.section-seven {
+  background-color: rgb(35, 35, 35);
+  height: 25vh;
+  color: $colorWhite;
+  @extend %flex-col;
+  align-items: center;
+}
+
+.section-seven__title {
+  font-size: 1.5rem;
+  font-family: $ffJosef;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $colorWhite;
+}
+
+.section-seven__subtitle {
+  font-size: 1rem;
+  font-family: $ffJosef;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  margin: 0.2rem 0 1rem 0;
+}
+
+.section-seven__icons {
+  width: 11rem;
+  @extend %flex-row;
+
+  .icon {
+    text-decoration: none;
+    color: $colorWhite;
+  }
+}

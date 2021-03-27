@@ -1,0 +1,141 @@
+.section-one {
+  background-image: url(../img/bg1.png);
+  height: 100vh;
+  text-align: center;
+  @extend %flex-col;
+  color: $colorWhite;
+}
+
+.section-one__title {
+  font-size: 3rem;
+  font-family: $ffJosef;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.section-one__subtitle {
+  font-size: 1.4rem;
+  font-family: $ffJosef;
+  letter-spacing: 0.4rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+.section-one__search {
+  display: flex;
+  align-content: end;
+  background-color: $colorWhite;
+  margin: 0 auto;
+  align-items: center;
+  .search-field {
+    background-color: $colorWhite;
+    width: 31.26rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: $colorFio;
+  }
+}
+
+.section-one__scroll {
+  font-family: $ffJosef;
+  color: $colorWhite;
+  font-weight: 100;
+  margin-top: 6rem;
+  cursor: pointer;
+}
+
+.scroll__link {
+  text-decoration: none;
+  color: $colorWhite;
+}
+
+.heading {
+  display: flex;
+  min-height: 8vh;
+  background-color: $colorFio;
+}
+
+.heading__container {
+  @extend %flex-row;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.heading__logo {
+  font-size: 1.4rem;
+  font-family: $ffJosef;
+  color: $colorWhite;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.heading__list {
+  @extend %flex-row;
+  list-style-type: none;
+  color: $colorWhite;
+  font-family: $ffAleo;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 50vh;
+}
+
+.list__item {
+  cursor: pointer;
+  height: 1.6rem;
+  padding: 0.3rem 0.3rem;
+  border-right: 1px solid rgba(255, 255, 255, 0);
+  border-left: 1px solid rgba(255, 255, 255, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.item-link {
+  text-decoration: none;
+  color: $colorWhite;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .section-one__search {
+    .search-field {
+      width: 25.26rem;
+    }
+  }
+
+  .heading__logo {
+    display: none;
+  }
+
+  .heading__list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .section-one__search {
+    .search-field {
+      width: 22rem;
+    }
+  }
+
+  .section-one__search > .button {
+    width: 4rem;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .heading__logo {
+    display: none;
+  }
+
+  .list__item:hover,
+  .item-link:hover,
+  .list__item:active,
+  .item-link:active {
+    border-left: none;
+  }
+}

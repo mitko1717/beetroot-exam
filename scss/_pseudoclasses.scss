@@ -1,0 +1,61 @@
+.scroll__link:hover,
+.scroll__link:hover {
+  transition: all 0.1s ease-in-out;
+  font-weight: 300;
+}
+
+.list__item:hover,
+.list__item:active {
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  opacity: 0.7;
+}
+
+.icon:active,
+.icon:hover {
+  color: $colorFio;
+  transition: all 0.1s ease-in-out;
+}
+
+::-webkit-input-placeholder {
+  color: $colorFio;
+  opacity: 0.5;
+  letter-spacing: 0.2rem;
+}
+
+.name-first:hover {
+  cursor: pointer;
+  color: rgb(86, 120, 250);
+}
+
+.name-sec:hover {
+  cursor: pointer;
+  color: rgb(253, 101, 103);
+}
+
+.name-third:hover {
+  cursor: pointer;
+  color: rgb(28, 164, 252);
+}
+
+.button:hover,
+.button:active {
+  transition: all 0.1s ease-in-out;
+  font-weight: 700;
+  background: linear-gradient(
+    45deg,
+    rgba(73, 107, 254, 0.8),
+    43%,
+    rgba(84, 116, 253, 0.8) 5%
+  );
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .list__item:hover,
+  .item-link:hover,
+  .list__item:active,
+  .item-link:active {
+    border-left: none;
+    border-right: none;
+  }
+}

@@ -1,0 +1,18 @@
+$colorFio: rgb(84, 116, 253);
+$colorWhite: rgb(255, 255, 255);
+$ffJosef: "Josefin Sans", sans-serif;
+$ffAleo: "Aleo";
+
+%flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+%flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
